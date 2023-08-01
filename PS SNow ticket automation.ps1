@@ -4,6 +4,8 @@ This is a PowerShell script created to automate false alert incidents in Service
 We are using the SNow REST API to fetch incident records matching our sysparm_query, then writing the script to execute PowerShell commands to check whether the server is reachable and if it can be reached through remote connection. If a positive response is received to these commands then the script will go ahead and close the ticket with appropriate resolution notes. In case the server is truly down, in that case no action will be taken by the script and the incident will be handled by the team.
 #>
 
+#sysparm_query: active=true^short_descriptionSTARTSWITHKB |^assignment_group=679434f053231300e321ddeeff7b12d8
+
 # Eg. User name="admin", Password="admin" for this code sample.
 $user = "admin"
 $pass = "admin"
