@@ -14,7 +14,6 @@ import subprocess	#module to run system commands.
 import json
 
 # Eg. User name="admin", Password="admin" for this code sample.
-env = 
 user = 'admin'
 pwd = 'admin'
 
